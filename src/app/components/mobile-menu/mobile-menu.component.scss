@@ -1,0 +1,35 @@
+
+.menu-icon {
+    color: #000;
+    margin-right: 10px;
+  }  
+  .mat-drawer-container {
+    &.mat-drawer-container-has-open {
+      z-index: 10;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      background-color: transparent
+    }
+  }
+  
+  .mat-drawer-opened {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 20;
+    .drawer-content {
+      height: 100vh;
+      background-color: #fff;
+      color: #000
+  
+  
+    }
+  }
+
+  .user-menu-content {
+    display: flex;
+    flex-direction: column;
+  }
+  

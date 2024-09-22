@@ -1,0 +1,38 @@
+.container-footer {
+    width: 100%;
+    min-height: 78px;
+    background-color: #84A4A1;
+    display: flex;
+
+    .title-oryes {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h5 { 
+            font-size: 18px;
+            font-family: Proxima Nova;
+            color: #fff;
+        }
+    }
+
+    .terms-conditions {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+
+        .container-terms {
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            h5 {
+                align-items: center;
+                font-size: 18px;
+                font-family: Proxima Nova;
+                color: #fff;
+            }
+        }
+    }
+}

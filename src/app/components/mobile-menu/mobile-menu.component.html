@@ -1,0 +1,60 @@
+<mat-icon
+  class="menu-icon"
+  (click)="openMenu()"
+  data-cy="mobile-menu-toggle-icon"
+>menu</mat-icon>
+<mat-sidenav-container>
+  <mat-sidenav
+    #sidenav
+    [autoFocus]="false"
+  >
+    <div
+      class="drawer-content"
+      *ngIf="sidenav.opened"
+      data-cy="mobile-menu-drawer-container"
+    >
+      <div class="user-section">
+        <mat-expansion-panel
+          [expanded]="true"
+          class="mobile-user-expansion-panel"
+        >
+          <mat-expansion-panel-header>
+   
+          </mat-expansion-panel-header>
+          <ng-template matExpansionPanelContent>
+            <div class="user-menu-content">
+              <a
+                class="user-menu-item"
+                [routerLink]="['/home']"
+                (click)="sideNav.close()"
+     
+              >
+                Inicio</a>      
+            </div>
+            <div class="user-menu-content">
+              <a
+                class="user-menu-item"
+                [routerLink]="['/especialidades']"
+                (click)="sideNav.close()"
+     
+              >
+              especialidades</a>      
+            </div>
+            <div class="user-menu-content">
+              <a
+                class="user-menu-item"
+                [routerLink]="['/paquetes']"
+                (click)="sideNav.close()"
+     
+              >
+              paquetes</a>      
+            </div>
+          </ng-template>
+        </mat-expansion-panel>
+      </div>
+      <mat-divider></mat-divider>
+
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content></mat-sidenav-content>
+</mat-sidenav-container>
